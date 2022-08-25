@@ -110,5 +110,6 @@ function deleteSpace() {
 
 function play() {
   var audio = document.getElementById("audio");
+  audio.volume = 0.4;
   audio.play();
 }
