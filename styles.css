@@ -9,15 +9,10 @@ body {
   background-image: url(images/calcskin.png);
   background-repeat: no-repeat;
   background-position: center;
-  min-width: unset;
-  min-height: 900px;
+  min-height: 853px;
   align-items: center;
   justify-content: center;
   gap: 80px;
-
-  @media (max-width: 480px) {
-    gap: 100px;
-  }
 }
 
 .btnContainer {
