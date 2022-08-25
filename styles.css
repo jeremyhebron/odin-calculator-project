@@ -1,0 +1,68 @@
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: rgb(250, 250, 250);
+}
+
+.container {
+  display: flex;
+  background-image: url(images/calcskin.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-width: unset;
+  min-height: 900px;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.btnContainer {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: repeat(6, 54px);
+  grid-template-rows: minmax(91px, auto) repeat(4, 91px);
+  position: relative;
+  top: 2.2em;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 1px solid greenyellow;
+  outline: none;
+  font-family: "Azeret Mono";
+}
+
+button:hover {
+  background-color: rgba(57, 255, 31);
+}
+
+.outputScreen {
+  display: flex;
+  background-color: black;
+  align-items: flex-end;
+  justify-content: space-around;
+  flex-direction: column;
+  min-width: 350px;
+  max-width: 350px;
+  min-height: 250px;
+  max-height: 250px;
+  position: relative;
+  word-wrap: break-word;
+  word-break: break-all;
+  bottom: 6.5em;
+}
+
+.previousOperand {
+  font-family: "Azeret Mono";
+  color: rgb(153, 255, 0);
+  font-size: 25px;
+}
+
+.currentOperand {
+  font-family: "Azeret Mono";
+  color: rgb(153, 255, 0);
+  font-size: 40px;
+}
