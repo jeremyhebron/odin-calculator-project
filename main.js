@@ -31,6 +31,8 @@ backSpaceBtn.addEventListener("click", (e) => {
 
 equalsBtn.addEventListener("click", (e) => {
   if (currentOperand != "" && previousOperand != "") {
+    previousDisplayNumber.textContent =
+      previousOperand + " " + operator + " " + currentOperand + " " + "=" + " ";
     compute();
   }
 });
@@ -77,6 +79,7 @@ function compute() {
     }
     previousOperand /= currentOperand;
   }
+
   previousOperand = roundNumber(previousOperand);
   previousOperand = previousOperand.toString();
   displayResults();
@@ -87,12 +90,6 @@ function roundNumber(num) {
 }
 
 function displayResults() {
-  if (previousOperand.length <= 11) {
-    currentDisplayNumber.textContent = previousOperand;
-  } else {
-    currentDisplayNumber.textContent = previousOperand.slice(0, 11) + "...";
-  }
-  previousDisplayNumber.textContent = "";
   currentDisplayNumber.textContent = previousOperand;
   currentOperand = "";
   operator = "";
