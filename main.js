@@ -107,3 +107,8 @@ function deleteSpace() {
   currentOperand = currentOperand.toString().slice(0, -1);
   currentDisplayNumber.textContent = currentOperand;
 }
+
+function play() {
+  var audio = document.getElementById("audio");
+  audio.play();
+}

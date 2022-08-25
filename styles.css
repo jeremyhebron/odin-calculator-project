@@ -66,3 +66,21 @@ button:hover {
   color: rgb(153, 255, 0);
   font-size: 40px;
 }
+
+.playButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 9.8em;
+  left: 8.3em;
+}
+
+.playButton {
+  display: block;
+  background-color: rgb(255, 255, 255, 0%);
+  min-width: 40px;
+  min-height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+}
