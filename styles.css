@@ -6,13 +6,14 @@ body {
 
 .container {
   display: flex;
+  gap: 80px;
   background-image: url(images/calcskin.png);
   background-repeat: no-repeat;
   background-position: center;
   min-height: 853px;
+  min-width: 1100px;
   align-items: center;
   justify-content: center;
-  gap: 80px;
 }
 
 .btnContainer {
@@ -20,23 +21,26 @@ body {
   justify-content: center;
   align-content: center;
   grid-template-columns: repeat(6, 54px);
-  grid-template-rows: minmax(91px, auto) repeat(4, 91px);
+  grid-template-rows: minmax(91px, auto) repeat(2, 91px);
   position: relative;
-  top: 2.2em;
+  bottom: 3.6em;
+  background-color: green;
 }
 
 button {
-  background-color: aliceblue;
+  background-color: rgb(35, 95, 35);
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.8rem;
   font-weight: bold;
   border: 1px solid greenyellow;
   outline: none;
-  font-family: "Azeret Mono";
+  font-family: "Syne Mono";
+  border-radius: 25px;
+  color: wheat;
 }
 
 button:hover {
-  background-color: rgba(57, 255, 31);
+  background-color: rgb(70, 146, 60);
 }
 
 .outputScreen {
@@ -53,16 +57,15 @@ button:hover {
   word-wrap: break-word;
   word-break: break-all;
   bottom: 6.5em;
+  font-family: "Syne Mono";
 }
 
 .previousOperand {
-  font-family: "Azeret Mono";
   color: rgb(153, 255, 0);
   font-size: 25px;
 }
 
 .currentOperand {
-  font-family: "Azeret Mono";
   color: rgb(153, 255, 0);
   font-size: 40px;
 }

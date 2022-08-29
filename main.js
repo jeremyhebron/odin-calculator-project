@@ -11,6 +11,7 @@ let operator = "";
 
 numberBtns.forEach((button) => {
   button.addEventListener("click", (e) => {
+    if (e.target.textContent === "." && currentOperand.includes(".")) return;
     handleNumber(e.target.textContent);
   });
 });
@@ -74,7 +75,7 @@ function compute() {
     previousOperand *= currentOperand;
   } else if (operator === "÷") {
     if (currentOperand <= 0) {
-      previousDisplayNumber.textContent = "Error";
+      previousDisplayNumber.textContent = "LMAO";
       return;
     }
     previousOperand /= currentOperand;
@@ -110,6 +111,6 @@ function deleteSpace() {
 
 function play() {
   var audio = document.getElementById("audio");
-  audio.volume = 0.4;
+  audio.volume = 0.2;
   audio.play();
 }
