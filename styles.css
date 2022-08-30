@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Syne Mono";
+  src: url(fonts/SyneMono-Regular.ttf);
+}
+
 body {
   padding: 0px;
   margin: 0px;
@@ -6,7 +11,6 @@ body {
 
 .container {
   display: flex;
-  gap: 80px;
   background-image: url(images/calcskin.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -23,7 +27,8 @@ body {
   grid-template-columns: repeat(6, 54px);
   grid-template-rows: minmax(91px, auto) repeat(2, 91px);
   position: relative;
-  bottom: 3.6em;
+  bottom: 3.5em;
+  right: 2.3em;
   background-color: green;
 }
 
@@ -57,6 +62,7 @@ button:hover {
   word-wrap: break-word;
   word-break: break-all;
   bottom: 6.5em;
+  left: 2em;
   font-family: "Syne Mono";
 }
 
