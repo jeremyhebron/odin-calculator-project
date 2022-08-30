@@ -43,7 +43,6 @@ button {
   border-radius: 25px;
   color: wheat;
   -webkit-appearance: none;
-  border-radius: 0;
 }
 
 button:hover {
